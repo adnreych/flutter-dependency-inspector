@@ -16,6 +16,8 @@
     </applicationListeners>
     <actions>
         <action id="StartInspectAction"
-                class="com.github.adnreych.flutterdependencyinspector.actions.StartInspectionAction" text="StartInspect"/>
+                class="com.github.adnreych.flutterdependencyinspector.actions.StartInspectionAction" text="StartInspect">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
     </actions>
 </idea-plugin>
