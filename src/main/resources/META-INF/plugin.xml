@@ -3,7 +3,7 @@
     <id>com.github.adnreych.flutterdependencyinspector</id>
     <name>flutter-dependency-inspector</name>
     <vendor>adnreych</vendor>
-
+    <idea-version since-build="202.8194"/>
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
@@ -15,4 +15,8 @@
         <listener class="com.github.adnreych.flutterdependencyinspector.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+    <actions>
+        <action id="StartInspectAction"
+                class="com.github.adnreych.flutterdependencyinspector.actions.StartInspectionAction" text="StartInspect"/>
+    </actions>
 </idea-plugin>
